@@ -39,7 +39,7 @@ const Portfolio = () => {
       <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800 py-4' : 'bg-transparent py-6'}`}>
         <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
           <div className="text-2xl font-bold tracking-tighter hover:text-lime-400 transition-colors cursor-pointer" onClick={() => scrollTo('home')}>
-            LCW<span className="text-lime-400">.</span>DEV
+            Lxvxxu<span className="text-lime-400">.</span>Portfolio
           </div>
           <div className="hidden md:flex space-x-8 text-sm font-medium text-zinc-400">
             {['About', 'Projects', 'Experience', 'Design'].map((item) => (
@@ -53,7 +53,7 @@ const Portfolio = () => {
             ))}
           </div>
           <a 
-            href="mailto:chaewon@example.com" 
+            href="mailto:202210133@sangmyung.kr" 
             className="px-5 py-2 bg-lime-400 text-zinc-950 font-bold rounded-full text-sm hover:bg-lime-300 transition-transform hover:scale-105"
           >
             Contact Me
@@ -106,10 +106,10 @@ const Portfolio = () => {
               <div className="absolute top-0 right-0 w-64 h-64 bg-lime-500/10 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-lime-500/20 transition-all"></div>
               <h3 className="text-zinc-400 text-sm font-mono mb-4 uppercase">Profile</h3>
               <p className="text-2xl font-bold leading-relaxed">
-                안녕하세요, <span className="text-lime-400">이채원</span>입니다.<br/>
+                안녕하세요! <span className="text-lime-400">이채원</span>입니다.<br/>
                 상명대학교 컴퓨터과학전공 4학년 진학 예정이며,
                 <br />
-                <span className="text-zinc-100">Unity, Web Front-end</span> 개발을 주력으로 합니다.
+                <span className="text-zinc-100">Unity, Web Front-end</span> 개발을 주력으로 합니다.<br/>
                 단순한 기능 구현을 넘어 <span className="underline decoration-lime-400 decoration-2 underline-offset-4">사용자가 즐거운 인터랙티브 경험</span>을 만드는 것에 집중합니다.
               </p>
               <div className="mt-8 flex gap-3 flex-wrap">
@@ -163,8 +163,11 @@ const Portfolio = () => {
                <div>
                   <div className="text-xs text-zinc-500 uppercase font-bold mt-4 mb-2">Certifications</div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="text-xs px-2 py-1 bg-zinc-800 rounded text-zinc-300">GTQ 포토샵 1급</span>
-                    <span className="text-xs px-2 py-1 bg-zinc-800 rounded text-zinc-300">ITQ 마스터</span>
+                    <span className="text-xs px-2 py-1 bg-zinc-800 rounded text-zinc-300">GTQ 포토샵</span>
+                    <span className="text-xs px-2 py-1 bg-zinc-800 rounded text-zinc-300">ITQ 한글</span>
+                    <span className="text-xs px-2 py-1 bg-zinc-800 rounded text-zinc-300">ITQ 엑셀</span>
+                    <span className="text-xs px-2 py-1 bg-zinc-800 rounded text-zinc-300">ITQ 인터넷</span>
+                    <span className="text-xs px-2 py-1 bg-zinc-800 rounded text-zinc-300">SQLD(예정)</span>
                   </div>
                </div>
             </div>
@@ -207,17 +210,18 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className="md:w-1/2 flex flex-col justify-center">
-                <div className="text-lime-400 font-bold font-mono mb-2">2022.11 - 2023.03 & 2024.11 - Present</div>
+                <div className="text-lime-400 font-bold font-mono mb-2">2022.11 ~ 2023.03 & 2024.11 - ~ 2025.02 </div>
                 <h3 className="text-3xl font-bold mb-4 group-hover:text-lime-400 transition-colors">상명대학교 메타버스 (SMU Metaverse)</h3>
                 <p className="text-zinc-400 mb-6 leading-relaxed">
                   ZEP 플랫폼과 Unity를 연동하여 상명대학교 캠퍼스를 가상 공간에 구축했습니다.
                   <br/>
-                  출시 당시 4인 팀장으로서 프로젝트를 리딩했으며, 현재는 단독 유지보수 및 리팩토링을 담당하여 맵 최적화와 신규 기능(방명록, 미니게임)을 개발하고 있습니다.
+                  출시 당시 4인 팀장으로서 프로젝트를 주도했으며, 이후 단독 유지보수를 담당하여 맵 최적화와 신규 기능(방명록, 미니게임)을 개발하였습니다.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-8">
                   <Badge text="Unity" highlight />
                   <Badge text="C#" />
                   <Badge text="ZEP Script" />
+                  <Badge text="Java Script" />
                   <Badge text="Team Leader" color="zinc" />
                 </div>
                 <div className="flex gap-4">
@@ -228,10 +232,14 @@ const Portfolio = () => {
                   >
                     상세 보기 <ChevronRight size={16} />
                   </button>
-                  <a href="https://github.com/kimlcw/metaverse-repo" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm font-bold text-zinc-500 hover:text-zinc-300 transition-colors">
+                  <a href="https://github.com/lxvxxu/SMU_metaverse" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm font-bold text-zinc-500 hover:text-zinc-300 transition-colors">
                     GitHub Repo <ExternalLink size={16} />
                   </a>
-                </div>
+                  <a href="https://zep.us/play/2NXVpX" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm font-bold text-zinc-500 hover:text-zinc-300 transition-colors">
+                    Metaverse <ExternalLink size={16} />
+                  </a>
+                </div>  
+                </div>  
               </div>
             </div>
 
@@ -300,7 +308,7 @@ const Portfolio = () => {
 
           <div className="relative border-l border-zinc-800 ml-4 space-y-12">
             <ExperienceItem 
-              date="2024.06 - 2024.08"
+              date="2024.01 ~ 2024.06"
               company="RAON Secure (라온시큐어)"
               role="QA Intern"
               desc={[
@@ -311,11 +319,13 @@ const Portfolio = () => {
               ]}
             />
              <ExperienceItem 
-              date="2022 - Present"
+              date="2024 ~ "
               company="상명대학교 개발 동아리 '이니로'"
               role="Member & Mentee"
               desc={[
-                "HTML/CSS/JS 웹 기초 스터디 참여",
+                "HTML/CSS/JS 웹 기초 스터디",
+                "알고리즘 스터디",
+                "데이터분석 스터디",
                 "팀 프로젝트 멘토링 및 코드 리뷰 경험"
               ]}
             />
@@ -348,7 +358,7 @@ const Portfolio = () => {
       {/* Footer */}
       <footer className="py-12 border-t border-zinc-900 text-center">
         <div className="text-2xl font-bold tracking-tighter mb-4 text-zinc-700">
-            LCW<span className="text-zinc-500">.</span>DEV
+            Lxvxxu<span className="text-zinc-500">.</span>Portfolio
         </div>
         <p className="text-zinc-500 text-sm mb-6">
           Designed & Developed by Lee Chaewon.<br/>
