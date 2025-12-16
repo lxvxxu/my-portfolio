@@ -81,8 +81,11 @@ const Portfolio = () => {
             <a href="https://github.com/kimlcw" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-zinc-100 text-zinc-950 px-6 py-3 rounded-xl font-bold hover:bg-zinc-200 transition-colors">
               <Github size={20} /> GitHub
             </a>
+            <a href="https://github.com/lxvxxu" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-zinc-100 text-zinc-950 px-6 py-3 rounded-xl font-bold hover:bg-zinc-200 transition-colors">
+              <Github size={20} /> GitHub
+            </a>
             <a href="https://lxvxxu.tistory.com/" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-zinc-900 text-zinc-100 border border-zinc-800 px-6 py-3 rounded-xl font-bold hover:border-lime-400 hover:text-lime-400 transition-colors">
-              <Book size={20} /> Tech Blog
+              <Book size={20} /> Tistory
             </a>
           </div>
         </div>
