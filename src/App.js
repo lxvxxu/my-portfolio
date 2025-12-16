@@ -236,7 +236,6 @@ const Portfolio = () => {
                     Metaverse <ExternalLink size={16} />
                   </a>
                 </div>  
-                </div>  
               </div>
             </div>
 
@@ -290,7 +289,6 @@ const Portfolio = () => {
                 tags={['Unity', 'Android', 'Arcade']}
               />
             </div>
-
           </div>
         </div>
       </section>
@@ -309,7 +307,7 @@ const Portfolio = () => {
               company="RAON Secure (라온시큐어)"
               role="QA Intern"
               desc={[
-                "보안 솔루션 제품(OnePass 등)에 대한 QA 테스트 수행 및 버그 리포팅",
+                "보안 솔루션 제품에 대한 QA 테스트 수행 및 버그 리포팅",
                 "Jira/Confluence를 활용한 애자일 협업 프로세스 경험",
                 "개발팀과 커뮤니케이션하며 결함 수정 프로세스 참여",
                 "매주 팀 스터디를 통해 ISTQB 자격증 관련 지식 습득"
@@ -331,7 +329,7 @@ const Portfolio = () => {
       </section>
 
        {/* Design Section */}
-       <section id="design" className="py-20 px-6">
+      <section id="design" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-between items-end mb-10">
             <h2 className="text-3xl font-bold flex items-center gap-2">
