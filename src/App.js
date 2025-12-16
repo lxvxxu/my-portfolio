@@ -24,6 +24,13 @@ const Portfolio = () => {
       // setActiveSection(id); // 사용하지 않으므로 주석 처리
     }
   };
+  
+  // 상세 보기 버튼 클릭 시 임시 로직
+  const handleDetailClick = (projectName) => {
+    console.log(`${projectName} 상세 보기 버튼 클릭됨.`);
+    // 여기에 모달 창을 띄우거나, 상세 페이지로 라우팅하는 로직이 들어갑니다.
+  };
+
 
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 font-sans selection:bg-lime-400 selection:text-zinc-950">
@@ -211,10 +218,13 @@ const Portfolio = () => {
                   <Badge text="Team Leader" color="zinc" />
                 </div>
                 <div className="flex gap-4">
-                  {/* href="#" 대신 유효한 값을 넣어 경고를 피했습니다. (jsx-a11y/anchor-is-valid 해결) */}
-                  <a href="javascript:void(0)" className="flex items-center gap-2 text-sm font-bold border-b border-lime-400 pb-1 hover:text-lime-400 transition-colors">
+                  {/* DETAIL LINK: <a> 태그 대신 onClick 핸들러를 가진 <button> 태그를 사용했습니다. */}
+                  <button 
+                    onClick={() => handleDetailClick('메타버스')} 
+                    className="flex items-center gap-2 text-sm font-bold border-b border-lime-400 pb-1 hover:text-lime-400 transition-colors focus:outline-none"
+                  >
                     상세 보기 <ChevronRight size={16} />
-                  </a>
+                  </button>
                   <a href="https://github.com/kimlcw/metaverse-repo" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm font-bold text-zinc-500 hover:text-zinc-300 transition-colors">
                     GitHub Repo <ExternalLink size={16} />
                   </a>
@@ -248,10 +258,13 @@ const Portfolio = () => {
                   <Badge text="Google Play" />
                 </div>
                 <div className="flex gap-4">
-                  {/* href="#" 대신 유효한 값을 넣어 경고를 피했습니다. (jsx-a11y/anchor-is-valid 해결) */}
-                  <a href="javascript:void(0)" className="flex items-center gap-2 text-sm font-bold border-b border-blue-400 pb-1 hover:text-blue-400 transition-colors">
+                  {/* DETAIL LINK: <a> 태그 대신 onClick 핸들러를 가진 <button> 태그를 사용했습니다. */}
+                  <button 
+                    onClick={() => handleDetailClick('공강이세요?')} 
+                    className="flex items-center gap-2 text-sm font-bold border-b border-blue-400 pb-1 hover:text-blue-400 transition-colors focus:outline-none"
+                  >
                     상세 보기 <ChevronRight size={16} />
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
