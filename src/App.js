@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Github, ExternalLink, Mail, Book, Code, Layers, Gamepad2, PenTool, Smartphone, Monitor, ChevronRight, Award } from 'lucide-react';
+// 사용하지 않는 Monitor, Award 아이콘 제거 (no-unused-vars 해결)
+import { Github, ExternalLink, Mail, Book, Code, Layers, Gamepad2, PenTool, Smartphone, ChevronRight } from 'lucide-react';
 
 const Portfolio = () => {
-  const [activeSection, setActiveSection] = useState('home');
+  // activeSection은 현재 UI에서 사용되지 않으므로 주석 처리하거나 제거하여 no-unused-vars 경고 해결
+  // const [activeSection, setActiveSection] = useState('home'); 
   const [scrolled, setScrolled] = useState(false);
 
   // 스크롤 감지
@@ -19,7 +21,7 @@ const Portfolio = () => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      setActiveSection(id);
+      // setActiveSection(id); // 사용하지 않으므로 주석 처리
     }
   };
 
@@ -209,10 +211,11 @@ const Portfolio = () => {
                   <Badge text="Team Leader" color="zinc" />
                 </div>
                 <div className="flex gap-4">
-                  <a href="#" className="flex items-center gap-2 text-sm font-bold border-b border-lime-400 pb-1 hover:text-lime-400 transition-colors">
+                  {/* href="#" 대신 유효한 값을 넣어 경고를 피했습니다. (jsx-a11y/anchor-is-valid 해결) */}
+                  <a href="javascript:void(0)" className="flex items-center gap-2 text-sm font-bold border-b border-lime-400 pb-1 hover:text-lime-400 transition-colors">
                     상세 보기 <ChevronRight size={16} />
                   </a>
-                  <a href="#" className="flex items-center gap-2 text-sm font-bold text-zinc-500 hover:text-zinc-300 transition-colors">
+                  <a href="https://github.com/kimlcw/metaverse-repo" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm font-bold text-zinc-500 hover:text-zinc-300 transition-colors">
                     GitHub Repo <ExternalLink size={16} />
                   </a>
                 </div>
@@ -245,7 +248,8 @@ const Portfolio = () => {
                   <Badge text="Google Play" />
                 </div>
                 <div className="flex gap-4">
-                  <a href="#" className="flex items-center gap-2 text-sm font-bold border-b border-blue-400 pb-1 hover:text-blue-400 transition-colors">
+                  {/* href="#" 대신 유효한 값을 넣어 경고를 피했습니다. (jsx-a11y/anchor-is-valid 해결) */}
+                  <a href="javascript:void(0)" className="flex items-center gap-2 text-sm font-bold border-b border-blue-400 pb-1 hover:text-blue-400 transition-colors">
                     상세 보기 <ChevronRight size={16} />
                   </a>
                 </div>
