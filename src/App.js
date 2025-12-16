@@ -78,9 +78,6 @@ const Portfolio = () => {
           </h1>
           
           <div className="flex flex-wrap gap-4 mt-12">
-            <a href="https://github.com/kimlcw" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-zinc-100 text-zinc-950 px-6 py-3 rounded-xl font-bold hover:bg-zinc-200 transition-colors">
-              <Github size={20} /> GitHub
-            </a>
             <a href="https://github.com/lxvxxu" target="_blank" rel="noreferrer" className="flex items-center gap-2 bg-zinc-100 text-zinc-950 px-6 py-3 rounded-xl font-bold hover:bg-zinc-200 transition-colors">
               <Github size={20} /> GitHub
             </a>
