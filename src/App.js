@@ -254,15 +254,15 @@ const Portfolio = () => {
                 <div className="text-blue-400 font-bold font-mono mb-2">2023 Google Play Released</div>
                 <h3 className="text-3xl font-bold mb-4 group-hover:text-blue-400 transition-colors">공강이세요? (Gong-gang)</h3>
                 <p className="text-zinc-400 mb-6 leading-relaxed">
-                  대학생들을 위한 시간표 및 공강 시간 공유 앱입니다.
-                  Unity와 Android Studio를 연동하여 캐릭터 커스터마이징 기능과 시간표 관리 기능을 결합했습니다.
+                  상명대학교 학생 및 교직원들이 건물 별로 입력한 시간 혹은
+                  현재 시간을 조회하여 수업이 없는, 빈 강의실을 알려주는 앱입니다. 
                   Google Play Store 출시 경험을 통해 배포 프로세스를 익혔습니다.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-8">
                   <Badge text="Android" />
                   <Badge text="Unity" />
-                  <Badge text="Java" />
-                  <Badge text="Google Play" />
+                  <Badge text="C#" />
+                  <Badge text="Google Play" />  
                 </div>
                 <div className="flex gap-4">
                   {/* DETAIL LINK: <a> 태그 대신 onClick 핸들러를 가진 <button> 태그를 사용했습니다. */}
@@ -356,7 +356,7 @@ const Portfolio = () => {
             Lxvxxu<span className="text-zinc-500">.</span>Portfolio
         </div>
         <p className="text-zinc-500 text-sm mb-6">
-          Designed & Developed by Lee Chaewon.<br/>
+          Designed & Developed by lxvxxu<br/>
           Built with React & Tailwind CSS.
         </p>
         <div className="flex justify-center gap-6 text-zinc-400">
