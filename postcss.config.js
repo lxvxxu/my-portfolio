@@ -1,6 +1,6 @@
 module.exports = {
   plugins: [
-    'tailwindcss', // 문자열로 변경
-    'autoprefixer',
+    require('tailwindcss'), // require 구문을 사용하여 모듈을 명시적으로 로드
+    require('autoprefixer'), // require 구문을 사용하여 모듈을 명시적으로 로드
   ],
 };
